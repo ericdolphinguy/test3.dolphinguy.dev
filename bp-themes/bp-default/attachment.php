@@ -7,6 +7,13 @@
 
 			<div class="page" id="attachments-page" role="main">
 
+				<?php
+				/**
+				 * Commit of removal of lorem
+				 * Removed lorem just below this phpdoc
+				 */
+				?>
+
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<?php do_action( 'bp_before_blog_post' ); ?>
