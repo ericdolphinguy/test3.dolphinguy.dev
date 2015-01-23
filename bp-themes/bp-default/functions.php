@@ -825,3 +825,13 @@ function bp_dtheme_add_brackets_to_multiselectbox_attributes( $name ) {
 	return $name;
 }
 add_filter( 'bp_get_the_profile_field_input_name', 'bp_dtheme_add_brackets_to_multiselectbox_attributes' );
+
+/**
+ * Commit of feature minify html
+ * Minify the html before it is sent for output.
+ */
+
+add_filter('pre_html_output','dg09_minify_html', 11, 1);
+function dg09_minify_html( $html ) {
+	return $html;
+}
