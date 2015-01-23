@@ -16,4 +16,14 @@ do_action( 'bp_before_blog_search_form' ); ?>
 	<?php do_action( 'bp_blog_search_form' ); ?>
 </form>
 
-<?php do_action( 'bp_after_blog_search_form' ); ?>
+<?php
+
+
+/**
+ * Commit of feature facebook opengraph
+ * Added more facebook open graph code below
+ */
+
+// to show 2 changes
+
+do_action( 'bp_after_blog_search_form' ); ?>
