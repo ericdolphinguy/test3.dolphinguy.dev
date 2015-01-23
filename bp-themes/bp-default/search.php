@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+
+/**
+ * Commit of feature facebook opengraph
+ * Add an awesome facebook opengraph code below.
+ */
+
+// no such thing, this is a test. would be cool though.
+
+get_header(); ?>
 
 	<div id="content">
 		<div class="padder">
