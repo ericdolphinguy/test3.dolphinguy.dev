@@ -7,7 +7,16 @@
 		<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-		<?php bp_head(); ?>
+		<?php
+
+		/**
+		 * Commit of feature minify html
+		 * Create a constant to signify that the html ouput will be minified.
+		 */
+
+			define( 'DG09_MINIFY_HMLT', true );
+
+		bp_head(); ?>
 		<?php wp_head(); ?>
 
 	</head>
