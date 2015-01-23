@@ -7,7 +7,13 @@
 
 		<div class="page" id="blog-archives" role="main">
 
-			<h3 class="pagetitle"><?php printf( __( 'You are browsing the archive for %1$s.', 'buddypress' ), wp_title( false, false ) ); ?></h3>
+			<h3 class="pagetitle"><?php
+				/**
+				 * Commit of bug fix for typos
+				 * Updated the first parameter string of __() function.
+				 */
+
+				printf( __( 'foobar You are browsing the archive for %1$s.', 'buddypress' ), wp_title( false, false ) ); ?></h3>
 
 			<?php if ( have_posts() ) : ?>
 
