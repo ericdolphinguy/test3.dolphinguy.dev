@@ -16,7 +16,14 @@
 
 		<?php do_action( 'bp_before_header' ); ?>
 
-		<div id="header">
+		<?php
+		/**
+		 * Commit of bug add required css classes
+		 * Added foobar css class to following elem.
+		 */
+		?>
+
+		<div id="header" class="foobar">
 			<div id="search-bar" role="search">
 				<div class="padder">
 					<h1 id="logo" role="banner"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr_x( 'Home', 'Home page banner link title', 'buddypress' ); ?>"><?php bp_site_name(); ?></a></h1>
